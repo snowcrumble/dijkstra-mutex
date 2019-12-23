@@ -6,13 +6,13 @@
 #define N 3
 #define K 2
 
-bool phase_1[N]; // stand for b in the paper
-bool phase_2[N]; // stand for c in the paper
-int current = K; // stand for k in the paper
+bool phase_1[N]; // stands for b in the paper
+bool phase_2[N]; // stands for c in the paper
+int current = K; // stands for k in the paper
 
 int protect;
 
-void f(int this_thread_num) // this_thread_num stand for i in the paper
+void f(int this_thread_num) // this_thread_num stands for i in the paper
 {
 #ifdef __linux
     std::cout << "Thread #" << this_thread_num << ": on CPU " << sched_getcpu() << "\n";
